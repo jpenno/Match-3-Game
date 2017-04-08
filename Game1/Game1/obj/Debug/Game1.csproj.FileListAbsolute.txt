@@ -1,0 +1,17 @@
+E:\c#\Match 3 Game\Match-3-Game\Game1\Game1\bin\DesktopGL\AnyCPU\Debug\MonoGame.Framework.dll.config
+E:\c#\Match 3 Game\Match-3-Game\Game1\Game1\bin\DesktopGL\AnyCPU\Debug\x86\SDL2.dll
+E:\c#\Match 3 Game\Match-3-Game\Game1\Game1\bin\DesktopGL\AnyCPU\Debug\x64\SDL2.dll
+E:\c#\Match 3 Game\Match-3-Game\Game1\Game1\bin\DesktopGL\AnyCPU\Debug\x86\soft_oal.dll
+E:\c#\Match 3 Game\Match-3-Game\Game1\Game1\bin\DesktopGL\AnyCPU\Debug\x64\soft_oal.dll
+E:\c#\Match 3 Game\Match-3-Game\Game1\Game1\bin\DesktopGL\AnyCPU\Debug\x86\libSDL2-2.0.so.0
+E:\c#\Match 3 Game\Match-3-Game\Game1\Game1\bin\DesktopGL\AnyCPU\Debug\x64\libSDL2-2.0.so.0
+E:\c#\Match 3 Game\Match-3-Game\Game1\Game1\bin\DesktopGL\AnyCPU\Debug\x86\libopenal.so.1
+E:\c#\Match 3 Game\Match-3-Game\Game1\Game1\bin\DesktopGL\AnyCPU\Debug\x64\libopenal.so.1
+E:\c#\Match 3 Game\Match-3-Game\Game1\Game1\bin\DesktopGL\AnyCPU\Debug\libSDL2-2.0.0.dylib
+E:\c#\Match 3 Game\Match-3-Game\Game1\Game1\bin\DesktopGL\AnyCPU\Debug\libopenal.1.dylib
+E:\c#\Match 3 Game\Match-3-Game\Game1\Game1\bin\DesktopGL\AnyCPU\Debug\Game1.exe
+E:\c#\Match 3 Game\Match-3-Game\Game1\Game1\bin\DesktopGL\AnyCPU\Debug\Game1.pdb
+E:\c#\Match 3 Game\Match-3-Game\Game1\Game1\bin\DesktopGL\AnyCPU\Debug\MonoGame.Framework.dll
+E:\c#\Match 3 Game\Match-3-Game\Game1\Game1\obj\Debug\Game1.csprojResolveAssemblyReference.cache
+E:\c#\Match 3 Game\Match-3-Game\Game1\Game1\obj\Debug\Game1.exe
+E:\c#\Match 3 Game\Match-3-Game\Game1\Game1\obj\Debug\Game1.pdb

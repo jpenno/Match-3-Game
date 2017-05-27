@@ -12,6 +12,6 @@ E:\c#\Match 3 Game\Match-3-Game\Game1\Game1\bin\DesktopGL\AnyCPU\Debug\libopenal
 E:\c#\Match 3 Game\Match-3-Game\Game1\Game1\bin\DesktopGL\AnyCPU\Debug\Game1.exe
 E:\c#\Match 3 Game\Match-3-Game\Game1\Game1\bin\DesktopGL\AnyCPU\Debug\Game1.pdb
 E:\c#\Match 3 Game\Match-3-Game\Game1\Game1\bin\DesktopGL\AnyCPU\Debug\MonoGame.Framework.dll
-E:\c#\Match 3 Game\Match-3-Game\Game1\Game1\obj\Debug\Game1.csprojResolveAssemblyReference.cache
 E:\c#\Match 3 Game\Match-3-Game\Game1\Game1\obj\Debug\Game1.exe
 E:\c#\Match 3 Game\Match-3-Game\Game1\Game1\obj\Debug\Game1.pdb
+E:\c#\Match 3 Game\Match-3-Game\Game1\Game1\bin\DesktopGL\AnyCPU\Debug\Content\TileBackGround.xnb

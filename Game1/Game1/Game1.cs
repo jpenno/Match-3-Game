@@ -1,4 +1,5 @@
 ﻿using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 
@@ -9,13 +10,20 @@ namespace Game1
     /// </summary>
     public class Game1 : Game
     {
+     
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
-        
+       //Texture2D m_backGroundTexture;
+
+        Board board;
+
+
         public Game1()
         {
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
+
+            board = new Board();
         }
 
         /// <summary>
@@ -29,6 +37,9 @@ namespace Game1
             // TODO: Add your initialization logic here
 
             base.Initialize();
+            Helper.SetRes(1080, 720, ref graphics);
+
+            board.initilze();
         }
 
         /// <summary>
@@ -41,6 +52,10 @@ namespace Game1
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
             // TODO: use this.Content to load your game content here
+            board.Load(Content);
+
+            //m_backGroundTexture = Content.Load<Texture2D>("TileBackGround");
+
         }
 
         /// <summary>
@@ -59,6 +74,8 @@ namespace Game1
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Update(GameTime gameTime)
         {
+            KeyboardState state = Keyboard.GetState();
+
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
                 Exit();
 
@@ -78,6 +95,14 @@ namespace Game1
             // TODO: Add your drawing code here
 
             base.Draw(gameTime);
+
+            spriteBatch.Begin();
+            board.Draw(spriteBatch, Content);
+
+            //spriteBatch.Draw(m_backGroundTexture, new Rectangle(0, 0, 64, 64),
+            //new Rectangle(32, 0, 32, 32),  Color.White);
+
+            spriteBatch.End();
         }
     }
 }

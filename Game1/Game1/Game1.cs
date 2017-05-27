@@ -13,7 +13,6 @@ namespace Game1
      
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
-       //Texture2D m_backGroundTexture;
 
         Board board;
 
@@ -23,7 +22,7 @@ namespace Game1
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
 
-            board = new Board();
+            board = new Board();              
         }
 
         /// <summary>
@@ -39,7 +38,6 @@ namespace Game1
             base.Initialize();
             Helper.SetRes(1080, 720, ref graphics);
 
-            board.initilze();
         }
 
         /// <summary>

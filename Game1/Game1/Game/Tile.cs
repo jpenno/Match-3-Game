@@ -20,12 +20,32 @@ namespace Game1
         Gem m_gem;
         Texture2D m_backGroundTexture;
         Rectangle m_source;
+        Rectangle m_destnation;
+        Vector2 m_postion;
         TILE_TYPE m_type;
+
+        public Tile(TILE_TYPE a_type, Vector2 a_postion)
+        {
+            m_type = a_type;
+            m_postion = a_postion;
+        
+
+            m_destnation = new Rectangle((int)m_postion.X, (int)m_postion.Y, 64, 64);
+
+            switch (m_type)
+            {
+                case TILE_TYPE.BLACK:
+                    m_source = new Rectangle(32, 0, 64, 32);
+                    break;
+                case TILE_TYPE.WHITE:
+                    m_source = new Rectangle(0, 0, 32, 32);
+                    break;
+            }
+        }
 
         public void Init(TILE_TYPE a_type)
         {
             m_type = a_type;
-
 
             switch(m_type)
             {
@@ -49,7 +69,7 @@ namespace Game1
 
         public void Draw(SpriteBatch sb, ContentManager a_content)
         {
-            sb.Draw(m_backGroundTexture, new Rectangle(0, 0, 64, 64), m_source, Color.White);
+            sb.Draw(m_backGroundTexture, m_destnation, m_source, Color.White);
         }
     }
 }

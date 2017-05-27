@@ -1,4 +1,5 @@
-﻿using Microsoft.Xna.Framework.Content;
+﻿using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 using System;
 using System.Collections.Generic;
@@ -10,25 +11,66 @@ namespace Game1
 {
     class Board
     {
-      // IList<Tile> m_tiles;
+        List<Tile> m_tiles;
 
-        Tile m_tiles;
+        int m_spacing = 64;
+
 
         public Board()
         {
-            m_tiles = new Tile();
-
+            m_tiles = new List<Tile>();
         }
 
-        public bool initilze()
+        public bool Initialize()
         {
-            m_tiles.Init(TILE_TYPE.WHITE);
+
+            int x = 0;
+            int y = 0;
+            bool flip = false;
+            for ( int i = 0; i < 64; i++)
+            {
+                if (flip)
+                {
+	                if ( i % 2 == 0)
+	                {
+	                    m_tiles.Add(new Tile(TILE_TYPE.WHITE, new Vector2(x, y)));
+	                }
+	                else
+	                {
+	                    m_tiles.Add(new Tile(TILE_TYPE.BLACK, new Vector2(x, y)));
+	                }
+                }
+                else
+                {
+                    if (i % 2 != 0)
+                    {
+                        m_tiles.Add(new Tile(TILE_TYPE.WHITE, new Vector2(x, y)));
+                    }
+                    else
+                    {
+                        m_tiles.Add(new Tile(TILE_TYPE.BLACK, new Vector2(x, y)));
+                    }
+                }
+
+                x += m_spacing;
+                if ( x > m_spacing * 7)
+                {
+                    flip = !flip;
+                    x = 0;
+                    y += m_spacing;
+                }
+            }
             return true;
         }
 
         public void Load(ContentManager a_content)
         {
-            m_tiles.Load(a_content);
+            Initialize();
+
+            for ( int i = 0; i < m_tiles.Count; i++)
+            {
+                m_tiles[i].Load(a_content);
+            }
         }
 
         public bool Destory()
@@ -42,7 +84,10 @@ namespace Game1
         }
         public void Draw(SpriteBatch sb, ContentManager a_content)
         {
-            m_tiles.Draw(sb, a_content);
+            for (int i = 0; i < m_tiles.Count(); i++)
+            {
+                m_tiles[i].Draw(sb, a_content);
+            }
         }
     }
 }

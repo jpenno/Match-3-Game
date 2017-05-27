@@ -15,3 +15,4 @@ E:\c#\Match 3 Game\Match-3-Game\Game1\Game1\bin\DesktopGL\AnyCPU\Debug\MonoGame.
 E:\c#\Match 3 Game\Match-3-Game\Game1\Game1\obj\Debug\Game1.exe
 E:\c#\Match 3 Game\Match-3-Game\Game1\Game1\obj\Debug\Game1.pdb
 E:\c#\Match 3 Game\Match-3-Game\Game1\Game1\bin\DesktopGL\AnyCPU\Debug\Content\TileBackGround.xnb
+E:\c#\Match 3 Game\Match-3-Game\Game1\Game1\obj\Debug\Game1.csprojResolveAssemblyReference.cache
